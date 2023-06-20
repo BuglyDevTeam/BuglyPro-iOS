@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Leak Example View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="RMLeakExampleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGS-Oy-u0T">
+                                <rect key="frame" x="20" y="219" width="374" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lF3-fH-4le"/>
+                                </constraints>
+                                <state key="normal" title="Open Leak"/>
+                                <connections>
+                                    <action selector="openLeak:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5mq-7p-MW5"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IHv-hF-HXL">
+                                <rect key="frame" x="20" y="84" width="374" height="120"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="3E4-DG-ezp"/>
+                                </constraints>
+                                <string key="text">使用说明：
+1、使用内存泄露检测功能，需要先开启记录对象内存分配。
+2、点击创建一个泄露对象。
+3、点击检测内存泄露。检测到泄露则数据会立刻上报。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqy-UK-yVV">
+                                <rect key="frame" x="20" y="274" width="374" height="40"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kXi-KO-EmS"/>
+                                </constraints>
+                                <state key="normal" title="Create Leak Obj"/>
+                                <connections>
+                                    <action selector="createLeakObj:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OOr-tV-8zA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNc-fw-94O">
+                                <rect key="frame" x="20" y="329" width="374" height="40"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hyU-zq-61A"/>
+                                </constraints>
+                                <state key="normal" title="Check Leak"/>
+                                <connections>
+                                    <action selector="checkLeak:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oMM-ci-NYP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elS-fb-JKS">
+                                <rect key="frame" x="20" y="384" width="374" height="40"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RCO-1t-2rT"/>
+                                </constraints>
+                                <state key="normal" title="Stop Leak"/>
+                                <connections>
+                                    <action selector="stopLeak:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Utt-m8-eWQ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AwS-LE-A77">
+                                <rect key="frame" x="20" y="439" width="374" height="403"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="elS-fb-JKS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="0t2-6Z-toU"/>
+                            <constraint firstItem="oNc-fw-94O" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="1QT-2z-OUw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Hqy-UK-yVV" secondAttribute="trailing" constant="20" id="3G1-LQ-DOz"/>
+                            <constraint firstItem="TGS-Oy-u0T" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="3W3-Nn-Phh"/>
+                            <constraint firstItem="AwS-LE-A77" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="9SY-Pi-VPe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IHv-hF-HXL" secondAttribute="trailing" constant="20" id="DUd-AR-0BY"/>
+                            <constraint firstItem="TGS-Oy-u0T" firstAttribute="top" secondItem="IHv-hF-HXL" secondAttribute="bottom" constant="15" id="MKx-tx-Tob"/>
+                            <constraint firstItem="AwS-LE-A77" firstAttribute="top" secondItem="elS-fb-JKS" secondAttribute="bottom" constant="15" id="MYz-mt-Def"/>
+                            <constraint firstItem="oNc-fw-94O" firstAttribute="top" secondItem="Hqy-UK-yVV" secondAttribute="bottom" constant="15" id="ONZ-0c-A2O"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TGS-Oy-u0T" secondAttribute="trailing" constant="20" id="QEG-Lz-ajx"/>
+                            <constraint firstItem="IHv-hF-HXL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="U57-Pz-nwB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AwS-LE-A77" secondAttribute="trailing" constant="20" id="UEd-if-h3G"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="elS-fb-JKS" secondAttribute="trailing" constant="20" id="aM9-FU-t8G"/>
+                            <constraint firstItem="Hqy-UK-yVV" firstAttribute="top" secondItem="TGS-Oy-u0T" secondAttribute="bottom" constant="15" id="dcf-t9-h5y"/>
+                            <constraint firstItem="IHv-hF-HXL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="m47-Lb-rRx"/>
+                            <constraint firstItem="elS-fb-JKS" firstAttribute="top" secondItem="oNc-fw-94O" secondAttribute="bottom" constant="15" id="mSV-Ut-29d"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="AwS-LE-A77" secondAttribute="bottom" constant="20" id="tT7-jx-vf6"/>
+                            <constraint firstItem="Hqy-UK-yVV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="vE1-nO-bnU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oNc-fw-94O" secondAttribute="trailing" constant="20" id="zrZ-jD-mHu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logView" destination="AwS-LE-A77" id="y2F-fF-q5W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

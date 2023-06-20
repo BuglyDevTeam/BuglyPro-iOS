@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Leak Example View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="RMVCLeakExampleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgh-DL-vJb">
+                                <rect key="frame" x="20" y="64" width="374" height="40"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eos-dh-sGj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Simulate VCLeak"/>
+                                <connections>
+                                    <action selector="createVCLeakExample:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aBr-2h-PUM"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="fill" text="使用说明： 点击按钮后，请等待30s。 30s后将会触发检测VC泄露逻辑并且上报数据。 如果想缩短检测时间请在配置中设置检测阈值。" borderStyle="roundedRect" textAlignment="justified" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Riv-6s-TcI">
+                                <rect key="frame" x="20" y="144" width="374" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="vfT-t4-KCZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Riv-6s-TcI" firstAttribute="top" secondItem="Dgh-DL-vJb" secondAttribute="bottom" constant="40" id="Elq-br-ZL1"/>
+                            <constraint firstItem="Dgh-DL-vJb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="NPt-B1-DY8"/>
+                            <constraint firstItem="Dgh-DL-vJb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="RLd-4u-kmT"/>
+                            <constraint firstAttribute="trailing" secondItem="Riv-6s-TcI" secondAttribute="trailing" constant="20" id="VtG-EW-tGM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Dgh-DL-vJb" secondAttribute="trailing" constant="20" id="Wal-Nb-PQu"/>
+                            <constraint firstItem="Riv-6s-TcI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="zI3-Fv-gjn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-200" y="31"/>
+        </scene>
+        <!--Leak Example Sub View Controller-->
+        <scene sceneID="UjK-wQ-t2g">
+            <objects>
+                <viewController storyboardIdentifier="rm.vcleak.subvc" id="axt-cG-neC" customClass="RMVCLeakExampleSubViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fpc-hq-U3r" customClass="RMVCLeakExa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="这是一个泄漏例子VC。 此VC被上一级VC持有，由此返回30s后，会判断其为“疑似泄漏”VC。" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u8v-4I-MpP">
+                                <rect key="frame" x="20" y="64" width="374" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="kmd-MY-Iim"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZSH-vN-hvG">
+                                <rect key="frame" x="117" y="436" width="180" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7d-wP-t5E">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="5kV-IT-Gej"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s 后返回上级页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqW-RM-b6w">
+                                        <rect key="frame" x="20" y="0.0" width="160" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="zdE-uM-fhl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="N7d-wP-t5E" firstAttribute="top" secondItem="ZSH-vN-hvG" secondAttribute="top" id="1IN-CB-0xp"/>
+                                    <constraint firstAttribute="bottom" secondItem="N7d-wP-t5E" secondAttribute="bottom" id="Gnd-yW-EtF"/>
+                                    <constraint firstAttribute="bottom" secondItem="gqW-RM-b6w" secondAttribute="bottom" id="Wfa-3c-tZ5"/>
+                                    <constraint firstItem="N7d-wP-t5E" firstAttribute="leading" secondItem="ZSH-vN-hvG" secondAttribute="leading" id="ZXG-57-9nf"/>
+                                    <constraint firstItem="gqW-RM-b6w" firstAttribute="leading" secondItem="N7d-wP-t5E" secondAttribute="trailing" id="aFm-C2-e0h"/>
+                                    <constraint firstItem="gqW-RM-b6w" firstAttribute="top" secondItem="ZSH-vN-hvG" secondAttribute="top" id="n5b-ZZ-U7O"/>
+                                    <constraint firstAttribute="trailing" secondItem="gqW-RM-b6w" secondAttribute="trailing" id="zkl-x0-EFB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kfl-vk-VSL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZSH-vN-hvG" firstAttribute="centerY" secondItem="fpc-hq-U3r" secondAttribute="centerY" id="2MJ-CS-Fe1"/>
+                            <constraint firstItem="ZSH-vN-hvG" firstAttribute="centerX" secondItem="fpc-hq-U3r" secondAttribute="centerX" id="7p2-Ve-fTj"/>
+                            <constraint firstItem="u8v-4I-MpP" firstAttribute="top" secondItem="kfl-vk-VSL" secondAttribute="top" constant="20" id="C8M-24-Hkw"/>
+                            <constraint firstItem="u8v-4I-MpP" firstAttribute="leading" secondItem="kfl-vk-VSL" secondAttribute="leading" constant="20" id="G2g-wk-ltM"/>
+                            <constraint firstItem="kfl-vk-VSL" firstAttribute="trailing" secondItem="u8v-4I-MpP" secondAttribute="trailing" constant="20" id="S1F-pE-lyX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="N7d-wP-t5E" id="Vrf-HG-z7f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vKu-yc-oVs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524.63768115942037" y="30.803571428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

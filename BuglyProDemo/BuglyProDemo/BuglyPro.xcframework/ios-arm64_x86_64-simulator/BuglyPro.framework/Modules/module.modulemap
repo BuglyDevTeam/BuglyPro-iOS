@@ -1,0 +1,6 @@
+framework module BuglyPro {
+  umbrella header "BuglyPro-umbrella.h"
+
+  export *
+  module * { export * }
+}

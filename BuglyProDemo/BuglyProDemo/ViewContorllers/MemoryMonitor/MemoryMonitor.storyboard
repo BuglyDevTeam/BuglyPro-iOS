@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MemoryMonitor-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController title="MemoryMonitor" id="Y6W-OH-hqX" customClass="MemoryMonitorViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="使用说明： 1、点击触发申请大内存操作。 2、监控到超过阈值申请内存会立刻上报数据。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sxg-XA-YwF">
+                                <rect key="frame" x="20" y="84" width="374" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="xxs-BE-faN"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKI-MR-omr">
+                                <rect key="frame" x="20" y="179" width="374" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ebn-nu-hDG"/>
+                                </constraints>
+                                <state key="normal" title="Malloc50M"/>
+                                <connections>
+                                    <action selector="mallocBigMemory:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ThN-lh-Eia"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EHk-o9-LvZ">
+                                <rect key="frame" x="20" y="354" width="374" height="488"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTV-Zc-cUl">
+                                <rect key="frame" x="20" y="234" width="374" height="40"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Pz1-qF-Cpz"/>
+                                </constraints>
+                                <state key="normal" title="MemoryOverflow"/>
+                                <connections>
+                                    <action selector="memoryOverflow:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="acC-T5-RPH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clf-Nc-mOd">
+                                <rect key="frame" x="20" y="294" width="374" height="40"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cog-O3-2xq"/>
+                                </constraints>
+                                <state key="normal" title="HeapGraph"/>
+                                <connections>
+                                    <action selector="heapGraph:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6In-Cj-oe6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EHk-o9-LvZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="1bz-GH-bwz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sKI-MR-omr" secondAttribute="trailing" constant="20" id="65I-4S-Xnx"/>
+                            <constraint firstItem="EHk-o9-LvZ" firstAttribute="top" secondItem="clf-Nc-mOd" secondAttribute="bottom" constant="20" id="8bG-RD-C2U"/>
+                            <constraint firstItem="clf-Nc-mOd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="CWH-SJ-bdG"/>
+                            <constraint firstItem="clf-Nc-mOd" firstAttribute="top" secondItem="eTV-Zc-cUl" secondAttribute="bottom" constant="20" id="GU8-Qr-YNd"/>
+                            <constraint firstItem="sxg-XA-YwF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="I4B-2j-IPK"/>
+                            <constraint firstItem="sKI-MR-omr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="L3y-Gt-uvn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eTV-Zc-cUl" secondAttribute="trailing" constant="20" id="LdI-MX-JX1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EHk-o9-LvZ" secondAttribute="trailing" constant="20" id="LoW-0m-TGU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="EHk-o9-LvZ" secondAttribute="bottom" constant="20" id="QD8-Pa-6Vs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sxg-XA-YwF" secondAttribute="trailing" constant="20" id="U1V-SM-iE8"/>
+                            <constraint firstItem="eTV-Zc-cUl" firstAttribute="top" secondItem="sKI-MR-omr" secondAttribute="bottom" constant="15" id="YaN-qE-WCR"/>
+                            <constraint firstItem="sKI-MR-omr" firstAttribute="top" secondItem="sxg-XA-YwF" secondAttribute="bottom" constant="15" id="hFE-Zu-HlD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="clf-Nc-mOd" secondAttribute="trailing" constant="20" id="pfo-qT-SRH"/>
+                            <constraint firstItem="sxg-XA-YwF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="se1-lv-g6C"/>
+                            <constraint firstItem="eTV-Zc-cUl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="xCU-Iy-etc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logsView" destination="EHk-o9-LvZ" id="WPl-c0-Ky5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-325" y="67"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
