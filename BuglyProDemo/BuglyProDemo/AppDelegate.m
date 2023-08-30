@@ -15,7 +15,6 @@
 
 static void logger_func(RMLoggerLevel level, const char *log) {
     NSLog(@"%s", log);
-//    DDLogVerbose(@"%@", [NSString stringWithUTF8String:log]);
 }
 
 @interface AppDelegate ()
@@ -46,11 +45,6 @@ static void logger_func(RMLoggerLevel level, const char *log) {
     
     BuglyConfig* config = [[BuglyConfig alloc] initWithAppId:@"a2031e998b" appKey:@"5f58a9cf-0acc-4c0d-a020-fc8f0bacb3cc"];
     [Bugly start:RM_MODULE_ALL config:config];
-    NSString* version = [[UIDevice currentDevice] model];
-    size_t size;
-//    sysctlbyname("hw.machine", NULL, &size, NULL, 0);
-//    char *answer = (char*)calloc(size, sizeof(char));
-//    sysctlbyname("hw.machine", answer, &size, NULL, 0);
     return YES;
 }
 

@@ -40,8 +40,10 @@
 		1BA7E0E82A09333C0091A9A5 /* BuglyProDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA7E0E72A09333C0091A9A5 /* BuglyProDemoTests.m */; };
 		1BA7E0F22A09333C0091A9A5 /* BuglyProDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA7E0F12A09333C0091A9A5 /* BuglyProDemoUITests.m */; };
 		1BA7E0F42A09333C0091A9A5 /* BuglyProDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA7E0F32A09333C0091A9A5 /* BuglyProDemoUITestsLaunchTests.m */; };
-		1BA7E1012A09F9B50091A9A5 /* BuglyPro.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA7E1002A09F9B50091A9A5 /* BuglyPro.xcframework */; };
 		1BA7E1042A0A322B0091A9A5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA7E1032A0A2ABF0091A9A5 /* libc++.tbd */; };
+		3D1B591BA7AA3EABD2D14074 /* Pods_BuglyProDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F047045A01C2930E4ED394D /* Pods_BuglyProDemo.framework */; };
+		6B98E61C42A52FEA8AB9FC6F /* Pods_BuglyProDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9966BEFCD141AE62E563C883 /* Pods_BuglyProDemoTests.framework */; };
+		C7E913BBF0A8A831104ADBB1 /* Pods_BuglyProDemo_BuglyProDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5BAB8DAED7DFFBA2EB9B58 /* Pods_BuglyProDemo_BuglyProDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,8 +124,16 @@
 		1BA7E0ED2A09333C0091A9A5 /* BuglyProDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuglyProDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA7E0F12A09333C0091A9A5 /* BuglyProDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuglyProDemoUITests.m; sourceTree = "<group>"; };
 		1BA7E0F32A09333C0091A9A5 /* BuglyProDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuglyProDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
-		1BA7E1002A09F9B50091A9A5 /* BuglyPro.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = BuglyPro.xcframework; sourceTree = "<group>"; };
 		1BA7E1032A0A2ABF0091A9A5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		293C9F9A2FB293BEE2B332FD /* Pods-BuglyProDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuglyProDemo.debug.xcconfig"; path = "Target Support Files/Pods-BuglyProDemo/Pods-BuglyProDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6FEE9F95875CFD3EA8EA2B02 /* Pods-BuglyProDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuglyProDemoTests.release.xcconfig"; path = "Target Support Files/Pods-BuglyProDemoTests/Pods-BuglyProDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		76BB0FD4A7292E8F4573371F /* Pods-BuglyProDemo-BuglyProDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuglyProDemo-BuglyProDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-BuglyProDemo-BuglyProDemoUITests/Pods-BuglyProDemo-BuglyProDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F047045A01C2930E4ED394D /* Pods_BuglyProDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuglyProDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93DDFC6AC0B4BAFFCEDBC62E /* Pods-BuglyProDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuglyProDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-BuglyProDemoTests/Pods-BuglyProDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9966BEFCD141AE62E563C883 /* Pods_BuglyProDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuglyProDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBD384D9FDAFD58BD0516D9 /* Pods-BuglyProDemo-BuglyProDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuglyProDemo-BuglyProDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-BuglyProDemo-BuglyProDemoUITests/Pods-BuglyProDemo-BuglyProDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED5BAB8DAED7DFFBA2EB9B58 /* Pods_BuglyProDemo_BuglyProDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuglyProDemo_BuglyProDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9B647D9344F7064596EC59 /* Pods-BuglyProDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuglyProDemo.release.xcconfig"; path = "Target Support Files/Pods-BuglyProDemo/Pods-BuglyProDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA7E1042A0A322B0091A9A5 /* libc++.tbd in Frameworks */,
-				1BA7E1012A09F9B50091A9A5 /* BuglyPro.xcframework in Frameworks */,
+				3D1B591BA7AA3EABD2D14074 /* Pods_BuglyProDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B98E61C42A52FEA8AB9FC6F /* Pods_BuglyProDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,12 +158,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7E913BBF0A8A831104ADBB1 /* Pods_BuglyProDemo_BuglyProDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0592870F8A16453CF3D63ACA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				293C9F9A2FB293BEE2B332FD /* Pods-BuglyProDemo.debug.xcconfig */,
+				EF9B647D9344F7064596EC59 /* Pods-BuglyProDemo.release.xcconfig */,
+				DFBD384D9FDAFD58BD0516D9 /* Pods-BuglyProDemo-BuglyProDemoUITests.debug.xcconfig */,
+				76BB0FD4A7292E8F4573371F /* Pods-BuglyProDemo-BuglyProDemoUITests.release.xcconfig */,
+				93DDFC6AC0B4BAFFCEDBC62E /* Pods-BuglyProDemoTests.debug.xcconfig */,
+				6FEE9F95875CFD3EA8EA2B02 /* Pods-BuglyProDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		1B3D33932A0CCF9C00134FE1 /* ViewContorllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +347,7 @@
 				1BA7E0F02A09333C0091A9A5 /* BuglyProDemoUITests */,
 				1BA7E0C92A0933390091A9A5 /* Products */,
 				1BA7E1022A0A2ABF0091A9A5 /* Frameworks */,
+				0592870F8A16453CF3D63ACA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -350,7 +376,6 @@
 				1BA7E0D92A09333C0091A9A5 /* LaunchScreen.storyboard */,
 				1BA7E0DC2A09333C0091A9A5 /* Info.plist */,
 				1BA7E0DD2A09333C0091A9A5 /* main.m */,
-				1BA7E1002A09F9B50091A9A5 /* BuglyPro.xcframework */,
 				1B3D33932A0CCF9C00134FE1 /* ViewContorllers */,
 			);
 			path = BuglyProDemo;
@@ -377,6 +402,9 @@
 			isa = PBXGroup;
 			children = (
 				1BA7E1032A0A2ABF0091A9A5 /* libc++.tbd */,
+				7F047045A01C2930E4ED394D /* Pods_BuglyProDemo.framework */,
+				ED5BAB8DAED7DFFBA2EB9B58 /* Pods_BuglyProDemo_BuglyProDemoUITests.framework */,
+				9966BEFCD141AE62E563C883 /* Pods_BuglyProDemoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -388,6 +416,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BA7E0F72A09333C0091A9A5 /* Build configuration list for PBXNativeTarget "BuglyProDemo" */;
 			buildPhases = (
+				82B175BE3E918FC5F229E32A /* [CP] Check Pods Manifest.lock */,
 				1BA7E0C42A0933390091A9A5 /* Sources */,
 				1BA7E0C52A0933390091A9A5 /* Frameworks */,
 				1BA7E0C62A0933390091A9A5 /* Resources */,
@@ -405,6 +434,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BA7E0FA2A09333C0091A9A5 /* Build configuration list for PBXNativeTarget "BuglyProDemoTests" */;
 			buildPhases = (
+				5B1CDA2C57E7F0B99FAAAF83 /* [CP] Check Pods Manifest.lock */,
 				1BA7E0DF2A09333C0091A9A5 /* Sources */,
 				1BA7E0E02A09333C0091A9A5 /* Frameworks */,
 				1BA7E0E12A09333C0091A9A5 /* Resources */,
@@ -423,6 +453,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BA7E0FD2A09333C0091A9A5 /* Build configuration list for PBXNativeTarget "BuglyProDemoUITests" */;
 			buildPhases = (
+				FB2DDCF039F09E1FE6F6ECAE /* [CP] Check Pods Manifest.lock */,
 				1BA7E0E92A09333C0091A9A5 /* Sources */,
 				1BA7E0EA2A09333C0091A9A5 /* Frameworks */,
 				1BA7E0EB2A09333C0091A9A5 /* Resources */,
@@ -509,6 +540,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B1CDA2C57E7F0B99FAAAF83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BuglyProDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82B175BE3E918FC5F229E32A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BuglyProDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB2DDCF039F09E1FE6F6ECAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BuglyProDemo-BuglyProDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1BA7E0C42A0933390091A9A5 /* Sources */ = {
@@ -705,13 +805,15 @@
 		};
 		1BA7E0F82A09333C0091A9A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 293C9F9A2FB293BEE2B332FD /* Pods-BuglyProDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 8MTNW3HY9X;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BuglyProDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -726,9 +828,13 @@
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.mqq.xiaocui1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.buglypro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -736,12 +842,14 @@
 		};
 		1BA7E0F92A09333C0091A9A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF9B647D9344F7064596EC59 /* Pods-BuglyProDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8MTNW3HY9X;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BuglyProDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -756,9 +864,13 @@
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.mqq.xiaocui1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.buglypro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -766,6 +878,7 @@
 		};
 		1BA7E0FB2A09333C0091A9A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93DDFC6AC0B4BAFFCEDBC62E /* Pods-BuglyProDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -783,6 +896,7 @@
 		};
 		1BA7E0FC2A09333C0091A9A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FEE9F95875CFD3EA8EA2B02 /* Pods-BuglyProDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -800,6 +914,7 @@
 		};
 		1BA7E0FE2A09333C0091A9A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFBD384D9FDAFD58BD0516D9 /* Pods-BuglyProDemo-BuglyProDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -815,6 +930,7 @@
 		};
 		1BA7E0FF2A09333C0091A9A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76BB0FD4A7292E8F4573371F /* Pods-BuglyProDemo-BuglyProDemoUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

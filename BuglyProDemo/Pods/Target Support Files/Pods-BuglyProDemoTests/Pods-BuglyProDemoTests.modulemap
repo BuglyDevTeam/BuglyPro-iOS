@@ -1,0 +1,6 @@
+framework module Pods_BuglyProDemoTests {
+  umbrella header "Pods-BuglyProDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
