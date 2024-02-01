@@ -1,5 +1,11 @@
 # SDK更新日志
 
+## Version 2.7.53.2
+
+Release on 2024.02.01
+
+* 2.7.53-beta更新版本号至正式版
+
 ## Version 2.7.53-beta.9
 
 Release on 2024.01.24
