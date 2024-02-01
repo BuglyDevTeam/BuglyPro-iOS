@@ -6,23 +6,27 @@
 	<dict>
 		<key>Headers/Bugly.h</key>
 		<data>
-		9rnryZCi1bz455ae03BfzHguL78=
+		UtHNNrUqphRYkJa5Z0q6y7V5oqE=
+		</data>
+		<key>Headers/BuglyAppLifeCycleProvider.h</key>
+		<data>
+		0DK9bRZ7CTyPU/5QHZJ7H+DUqLE=
 		</data>
 		<key>Headers/BuglyConfig.h</key>
 		<data>
-		437KUT053E+LcEuz7wknSrm3aGQ=
+		2kuAjMe2fYMnqyt9YnRkDqL2bRs=
 		</data>
 		<key>Headers/BuglyCrashMonitorPlugin.h</key>
 		<data>
-		fxiIgDZlzb+oa5AmedNCwr6dkYg=
+		+tEWLIDNRZhejhogl2zy47MIrVg=
 		</data>
 		<key>Headers/BuglyCustomData.h</key>
 		<data>
-		5jKi3VBNKwLWqWbOTsMH7R1X13s=
+		btel7wtyvEYiTFSSzwV0VWLhqRQ=
 		</data>
 		<key>Headers/BuglyDefine.h</key>
 		<data>
-		nWlfKwHpPuGGPEOJwPmX1MNjlu8=
+		cy121syELhGuBGC6+IthCwdX76U=
 		</data>
 		<key>Headers/BuglyDelegate.h</key>
 		<data>
@@ -38,11 +42,11 @@
 		</data>
 		<key>Headers/BuglyPro-umbrella.h</key>
 		<data>
-		W3zyUU8Iy7qrQoolEMKkbJ3SicQ=
+		YU+BehzVa8lY39DOuk+kd1ih1ro=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dPpNbhJDHMkjwpFj/aUr7rXLJg4=
+		OL68qfVR+DV3B4fx76u7ONY7QXE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,11 +54,31 @@
 		</data>
 		<key>PrivateHeaders/Bugly+Private.h</key>
 		<data>
-		qtPFRB8s5J6FbBi0DtQBCjbSJSo=
+		qK86oaAiZySWrh1nCkVumARrexg=
+		</data>
+		<key>PrivateHeaders/BuglyCFNetworkInstrumentation.h</key>
+		<data>
+		pgzN+rUsiZpd9RYU7c+suVjjzeI=
+		</data>
+		<key>PrivateHeaders/BuglyConfig+Private.h</key>
+		<data>
+		D6r4tFtJh+rrTATGZ+q/0cVpMYQ=
+		</data>
+		<key>PrivateHeaders/BuglyCoreDumpRegister.h</key>
+		<data>
+		/rKrs3dtfaFoygZDGNNUKe12jZY=
 		</data>
 		<key>PrivateHeaders/BuglyCrashMonitorPlugin+Private.h</key>
 		<data>
 		1E96S7haj3j1Tu0qg49geCxjDhY=
+		</data>
+		<key>PrivateHeaders/BuglyCustomData+Private.h</key>
+		<data>
+		CPpRB5FO8gd032ZyL3XGZFlfXks=
+		</data>
+		<key>PrivateHeaders/BuglyDispatchRecording.h</key>
+		<data>
+		qABhZF+Of8Wk2RLGbkoVw2/vQW8=
 		</data>
 		<key>PrivateHeaders/BuglyLooperMonitorPlugin+Private.h</key>
 		<data>
@@ -66,7 +90,51 @@
 		</data>
 		<key>PrivateHeaders/BuglyMallocLogger.h</key>
 		<data>
-		lZg3e3yj5JQHygFb2vTxJlNlva8=
+		YiDtD9xsDxpkrRhVQAqBW/VNtKU=
+		</data>
+		<key>PrivateHeaders/BuglyNSURLConnectionInstrumentation.h</key>
+		<data>
+		ebae93gLcwzURx1fs9/J6qLKP6g=
+		</data>
+		<key>PrivateHeaders/BuglyNSURLInstrumentationHelper.h</key>
+		<data>
+		sne/8Q6j2Bc+UT0EjnSN+GedDXc=
+		</data>
+		<key>PrivateHeaders/BuglyNSURLSessionInstrumenation.h</key>
+		<data>
+		HDXCWTWrh6m37LnNKHOf2kB5o0E=
+		</data>
+		<key>PrivateHeaders/BuglyNetworkDefines.h</key>
+		<data>
+		XwHizl8+Pl7LSUShGzlSAQ1/YAM=
+		</data>
+		<key>PrivateHeaders/BuglyNetworkMetricRecorder.h</key>
+		<data>
+		lQjzTdBM3OJVD7xTs9N8/vUC3JI=
+		</data>
+		<key>PrivateHeaders/BuglyNetworkMetricRecorderBridge.h</key>
+		<data>
+		gUutyakj+Nq5DYqIgM72d8DxCis=
+		</data>
+		<key>PrivateHeaders/BuglyNetworkMetrics.h</key>
+		<data>
+		D/DJfx51Rkl/ZfYZ1lnKBNvRGyg=
+		</data>
+		<key>PrivateHeaders/BuglyNetworkMonitor.h</key>
+		<data>
+		CnOq+3di7JggFqTJXI9irpGtzgM=
+		</data>
+		<key>PrivateHeaders/BuglyNetworkMonitorConfig.h</key>
+		<data>
+		6UMTRkGfWE4pFXCYXhCZnmNGADs=
+		</data>
+		<key>PrivateHeaders/BuglyNetworkTracer+Public.h</key>
+		<data>
+		/VRHNVh4RtZeG3rERt8bgNNLu94=
+		</data>
+		<key>PrivateHeaders/BuglyNetworkTracer.h</key>
+		<data>
+		4moK8eeJhOOWrPI1mB8ZUI5w140=
 		</data>
 		<key>PrivateHeaders/BuglySingleSafeChecker.h</key>
 		<data>
@@ -74,7 +142,11 @@
 		</data>
 		<key>PrivateHeaders/BuglyThreadActivityTracker.h</key>
 		<data>
-		paII00aAwkJeNbPCZTGCpOSwbco=
+		tKmG4OuJeScTvkM+xzXHYyhFsWc=
+		</data>
+		<key>PrivateHeaders/BuglyTools_C.h</key>
+		<data>
+		00yjAllcj8JL1kjag2BgEjE4xrs=
 		</data>
 		<key>PrivateHeaders/BuglyViewControllerUtility.h</key>
 		<data>
@@ -82,7 +154,7 @@
 		</data>
 		<key>PrivateHeaders/CThreadStack.h</key>
 		<data>
-		wCvR8piiTovsVV63W5cknpGbARc=
+		PVDKfE2LZc/9Hx+zJqy+AHBSviM=
 		</data>
 		<key>PrivateHeaders/NSObject+OCHook.h</key>
 		<data>
@@ -122,7 +194,7 @@
 		</data>
 		<key>PrivateHeaders/RMLooperEventInfo.h</key>
 		<data>
-		Ii9BFDt9uDkFuan4ctRjn9qQha8=
+		woxIRlD8iDnElYv5gIO3ghEbuI4=
 		</data>
 		<key>PrivateHeaders/RMLooperHitchesInfo.h</key>
 		<data>
@@ -134,7 +206,7 @@
 		</data>
 		<key>PrivateHeaders/RMMachOImageHelper.h</key>
 		<data>
-		r4PNLidwyzIreN0Tfg3xa3hOAA4=
+		3wBPqOpmGdKAnio9FXT/OpzeQQw=
 		</data>
 		<key>PrivateHeaders/RMMemoryMonitorPlugin.h</key>
 		<data>
@@ -142,7 +214,7 @@
 		</data>
 		<key>PrivateHeaders/RMObject.h</key>
 		<data>
-		neAiMb997MWoBNX8N5WrA7hpEYE=
+		S53IJ4N2WljS1myLEpeysjy/wgE=
 		</data>
 		<key>PrivateHeaders/RMResourceModel.h</key>
 		<data>
@@ -166,11 +238,11 @@
 		</data>
 		<key>PrivateHeaders/RMUIViewControllerMetric.h</key>
 		<data>
-		3MaewRXkMuZgLwrluDT3g0YX/Mk=
+		MtX5I4qZkD1pnNVx3n3aOkpEaZQ=
 		</data>
 		<key>PrivateHeaders/RMVCEventHandlerCenter+Private.h</key>
 		<data>
-		TMCQNgK/s6TuBh39y1D4A5CBcYQ=
+		rUALjumPlOdbP61cIlupU/sbbJs=
 		</data>
 		<key>PrivateHeaders/RMVCEventHandlerCenter.h</key>
 		<data>
@@ -178,11 +250,11 @@
 		</data>
 		<key>PrivateHeaders/RMVCLeakHunter.h</key>
 		<data>
-		hL7GMjXL5khnbXu7F9sBZWyo/kM=
+		bbdGmqkfyTdP2qT4F1F570mJad0=
 		</data>
 		<key>PrivateHeaders/RMVCWeakRefWrapper.h</key>
 		<data>
-		7Qcwud7wCaNTytsZhEeJCi3Njbw=
+		YRjtCXw7O5hwcKiaoVL3DdekkbY=
 		</data>
 		<key>PrivateHeaders/RMVersion.h</key>
 		<data>
@@ -199,6 +271,14 @@
 		<key>PrivateHeaders/UIViewController+RMVCSwizzle.h</key>
 		<data>
 		aYYLKzfPQRAtcFu3R8c4bbh8XoA=
+		</data>
+		<key>PrivateHeaders/bugly_dispatch_recording_map.h</key>
+		<data>
+		UOX/gj2fmjujCCU+dIYxOLUeRxk=
+		</data>
+		<key>PrivateHeaders/bugly_macho_image_helper.h</key>
+		<data>
+		p+wGOrfBFrVlQVduFnI3jncPQpM=
 		</data>
 		<key>PrivateHeaders/rm_fishhook.h</key>
 		<data>
@@ -219,55 +299,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9rnryZCi1bz455ae03BfzHguL78=
+			UtHNNrUqphRYkJa5Z0q6y7V5oqE=
 			</data>
 			<key>hash2</key>
 			<data>
-			XC0nOYa+DtZzwWOWjos5z3UXwlbJe6XQXQsQD2PfJyg=
+			ashCrEVNKXeQn/yJfZnE3pH/ka8iMBdgHK8GNK/Q8Fc=
+			</data>
+		</dict>
+		<key>Headers/BuglyAppLifeCycleProvider.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0DK9bRZ7CTyPU/5QHZJ7H+DUqLE=
+			</data>
+			<key>hash2</key>
+			<data>
+			9qrCHm4ny2HDpBB+IktV0L9kdJ2BK3KeSOla6KOZI4c=
 			</data>
 		</dict>
 		<key>Headers/BuglyConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			437KUT053E+LcEuz7wknSrm3aGQ=
+			2kuAjMe2fYMnqyt9YnRkDqL2bRs=
 			</data>
 			<key>hash2</key>
 			<data>
-			WT6rerqaMKLx0CQ8uGkCQwnim0au+36EgvY4dRKIXwQ=
+			LdNCaWgX1IkwrwX6BXD5lvFTGdhjz6elNTIEEAUjyt4=
 			</data>
 		</dict>
 		<key>Headers/BuglyCrashMonitorPlugin.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fxiIgDZlzb+oa5AmedNCwr6dkYg=
+			+tEWLIDNRZhejhogl2zy47MIrVg=
 			</data>
 			<key>hash2</key>
 			<data>
-			SHQmbrV1jEApj327F6nV8mMr3nWaZd/c5D9JhHzQodE=
+			969Yb3bDVKEXVFyN68CT2buByHjam2uqHSV0Dw2Hvac=
 			</data>
 		</dict>
 		<key>Headers/BuglyCustomData.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5jKi3VBNKwLWqWbOTsMH7R1X13s=
+			btel7wtyvEYiTFSSzwV0VWLhqRQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			RPeie79Xi/6+ShfV4ftusx5YpfUsLJb1LmKogg4qLFk=
+			B5l9kYzSnWlBqd9KhTITlavhPyVEnwj/LI/KnkMzFqo=
 			</data>
 		</dict>
 		<key>Headers/BuglyDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nWlfKwHpPuGGPEOJwPmX1MNjlu8=
+			cy121syELhGuBGC6+IthCwdX76U=
 			</data>
 			<key>hash2</key>
 			<data>
-			8iscWvwQjQAA9hXxYFd35BCKMRmsrS/XK0g4wxZQm7A=
+			yQ1sJu4IMTVYHmzsOeQA9miJ51DBnptl92oHHqRcF6w=
 			</data>
 		</dict>
 		<key>Headers/BuglyDelegate.h</key>
@@ -307,11 +398,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W3zyUU8Iy7qrQoolEMKkbJ3SicQ=
+			YU+BehzVa8lY39DOuk+kd1ih1ro=
 			</data>
 			<key>hash2</key>
 			<data>
-			OcwjBtGbjncCp3/Wmi8zCASV1DxOZwXQZ0/E+FO1vvg=
+			PVZw+6h90A0lwoNK6/212ZFo0kVB7R7ThtUYD0FWcuU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -329,11 +420,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qtPFRB8s5J6FbBi0DtQBCjbSJSo=
+			qK86oaAiZySWrh1nCkVumARrexg=
 			</data>
 			<key>hash2</key>
 			<data>
-			S4EBCq++G6djLKgU+hjDq42qgxMDDz6nBV19t3QuqUE=
+			6IYo9UYz3IDyCe6KN0bfAZPy11bRSzEcNqyR1YY2RMs=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyCFNetworkInstrumentation.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pgzN+rUsiZpd9RYU7c+suVjjzeI=
+			</data>
+			<key>hash2</key>
+			<data>
+			aLfU2Qc5cyQqZZkJIjCnSUExvgz5QenHknasoCBFDUc=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyConfig+Private.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D6r4tFtJh+rrTATGZ+q/0cVpMYQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			62u7xG9KvfI4piwzHrIPMiflAkwuIEdQXlIlRtXIB/M=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyCoreDumpRegister.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/rKrs3dtfaFoygZDGNNUKe12jZY=
+			</data>
+			<key>hash2</key>
+			<data>
+			mqr9YvTT6g1ZaLsP8FH3oX9rFfRv96BcYIHeo6X/8Vo=
 			</data>
 		</dict>
 		<key>PrivateHeaders/BuglyCrashMonitorPlugin+Private.h</key>
@@ -345,6 +469,28 @@
 			<key>hash2</key>
 			<data>
 			R2NM6WKy4C16SHcRpXlUFgEKHjeETMOBUJeUCjX+pd8=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyCustomData+Private.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CPpRB5FO8gd032ZyL3XGZFlfXks=
+			</data>
+			<key>hash2</key>
+			<data>
+			ajaYBwQXhmwdy3GXn2iqGAS645fLrhrH+UtvzmplrCE=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyDispatchRecording.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qABhZF+Of8Wk2RLGbkoVw2/vQW8=
+			</data>
+			<key>hash2</key>
+			<data>
+			2pr4aClrkGALv2AnnZP/rjl8dk9m+waFlSxEtijoD38=
 			</data>
 		</dict>
 		<key>PrivateHeaders/BuglyLooperMonitorPlugin+Private.h</key>
@@ -373,11 +519,132 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lZg3e3yj5JQHygFb2vTxJlNlva8=
+			YiDtD9xsDxpkrRhVQAqBW/VNtKU=
 			</data>
 			<key>hash2</key>
 			<data>
-			0JNwgDC6sclg/tGNX/03GiG8C+3sz3UzRVbleqhgliU=
+			Dw072VVCZpYaFLNpsdxiO0AnHMi+sHHxST68VEnAu3o=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyNSURLConnectionInstrumentation.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ebae93gLcwzURx1fs9/J6qLKP6g=
+			</data>
+			<key>hash2</key>
+			<data>
+			8yNszGCfKVAYaZhPsD1A+iYKwCmVv7Y7rnjBCFrt0yk=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyNSURLInstrumentationHelper.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sne/8Q6j2Bc+UT0EjnSN+GedDXc=
+			</data>
+			<key>hash2</key>
+			<data>
+			rUS0AseqmW7Qqs0EaJQdtLUoXzfRZRYLRljvUZx5wq4=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyNSURLSessionInstrumenation.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HDXCWTWrh6m37LnNKHOf2kB5o0E=
+			</data>
+			<key>hash2</key>
+			<data>
+			2WXCAwJHtx3RMfQcZsgeQUl/HhoxwFFkJ8yRFC4+lX4=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyNetworkDefines.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XwHizl8+Pl7LSUShGzlSAQ1/YAM=
+			</data>
+			<key>hash2</key>
+			<data>
+			CKmEJh+mDUbLntfn8myF6T8RAyDDx5pG3DCPNPPKgng=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyNetworkMetricRecorder.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lQjzTdBM3OJVD7xTs9N8/vUC3JI=
+			</data>
+			<key>hash2</key>
+			<data>
+			IyYMRMhw82WOClDwgMixOa5RqLKT/mBdFM674avL0jU=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyNetworkMetricRecorderBridge.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gUutyakj+Nq5DYqIgM72d8DxCis=
+			</data>
+			<key>hash2</key>
+			<data>
+			/r7BDDmVKhUhwhnuHnPgH1u4MrI/Cn8F/uzZhYN1L/k=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyNetworkMetrics.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D/DJfx51Rkl/ZfYZ1lnKBNvRGyg=
+			</data>
+			<key>hash2</key>
+			<data>
+			hQ1PRCoxunUbeVj1fdRP1lGMjZsGX6dbMET1OVL2hng=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyNetworkMonitor.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CnOq+3di7JggFqTJXI9irpGtzgM=
+			</data>
+			<key>hash2</key>
+			<data>
+			4SqVqka6NpBqKNnzo/rOdus93paQAH3iGDNcUUCvgvg=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyNetworkMonitorConfig.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6UMTRkGfWE4pFXCYXhCZnmNGADs=
+			</data>
+			<key>hash2</key>
+			<data>
+			TVcS51xurGcFRZHHTnNtpzM/7bIPjNayogW4w1rtFZw=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyNetworkTracer+Public.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/VRHNVh4RtZeG3rERt8bgNNLu94=
+			</data>
+			<key>hash2</key>
+			<data>
+			3wJ0+z2IqRvLBbwzgZZM7nBIxG75FpFjDBRObNKLBI0=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyNetworkTracer.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4moK8eeJhOOWrPI1mB8ZUI5w140=
+			</data>
+			<key>hash2</key>
+			<data>
+			56/3UJE69ynHIbHY+eozPCiropml/gKwQt7DqPc74yo=
 			</data>
 		</dict>
 		<key>PrivateHeaders/BuglySingleSafeChecker.h</key>
@@ -395,11 +662,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			paII00aAwkJeNbPCZTGCpOSwbco=
+			tKmG4OuJeScTvkM+xzXHYyhFsWc=
 			</data>
 			<key>hash2</key>
 			<data>
-			p31RZ4mgZjgR6SCrQZDhVqy8ePNNuLiwaEPlmqXy7nM=
+			s6n2Rhaud8nOFumDwpuSHxOilr3IGCy5LVVXoRxFoN8=
+			</data>
+		</dict>
+		<key>PrivateHeaders/BuglyTools_C.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			00yjAllcj8JL1kjag2BgEjE4xrs=
+			</data>
+			<key>hash2</key>
+			<data>
+			AGyn/wZ+1BeEOQHUiGt7d6eUKJ3c36Rw7zp4uu36gsI=
 			</data>
 		</dict>
 		<key>PrivateHeaders/BuglyViewControllerUtility.h</key>
@@ -417,11 +695,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wCvR8piiTovsVV63W5cknpGbARc=
+			PVDKfE2LZc/9Hx+zJqy+AHBSviM=
 			</data>
 			<key>hash2</key>
 			<data>
-			bBbZA8swRI90zMp0gSlbjhvd00qmzrgQuh3QrzaIs9Q=
+			khdNkd/NH2z7o4LwdLoyAI8eauLDjpDyipkljh0A1YI=
 			</data>
 		</dict>
 		<key>PrivateHeaders/NSObject+OCHook.h</key>
@@ -527,11 +805,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ii9BFDt9uDkFuan4ctRjn9qQha8=
+			woxIRlD8iDnElYv5gIO3ghEbuI4=
 			</data>
 			<key>hash2</key>
 			<data>
-			JkryZXl3yAFPJjQ7cBJNLbO2Ee8cK9Zx9l9EXt2++Eg=
+			maUFdErBxs+hMvXewsTPKNBN+oltvnP/iQxUgK/BMzQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RMLooperHitchesInfo.h</key>
@@ -560,11 +838,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			r4PNLidwyzIreN0Tfg3xa3hOAA4=
+			3wBPqOpmGdKAnio9FXT/OpzeQQw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vm8/qdzevExQmjJjq245yCH0mQKkFQGgUxr9PtcMTCA=
+			7W+VqZ4lFSUfGvy6YE3ReLcjHaPriPbM/nJCqogULJA=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RMMemoryMonitorPlugin.h</key>
@@ -582,11 +860,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			neAiMb997MWoBNX8N5WrA7hpEYE=
+			S53IJ4N2WljS1myLEpeysjy/wgE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Rb5/So3jKEmIyyMyg/PkD0rmNaMKQ+Pkw1TlIu0+iMo=
+			vNuXMd1Yj5Xfz2UYrBJguIW2Khyv0IDTkHpmM9yT/zg=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RMResourceModel.h</key>
@@ -648,22 +926,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3MaewRXkMuZgLwrluDT3g0YX/Mk=
+			MtX5I4qZkD1pnNVx3n3aOkpEaZQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ONVQT6QuukaAaEQmiq4Xq0niW0QZI7bG1NuuabJkt8o=
+			kNLr4zH62BXk8iTvZN8pq+SKJKhdFnTaeuOrQY7lZqM=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RMVCEventHandlerCenter+Private.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TMCQNgK/s6TuBh39y1D4A5CBcYQ=
+			rUALjumPlOdbP61cIlupU/sbbJs=
 			</data>
 			<key>hash2</key>
 			<data>
-			tgXofZsN9nWRlv0cOh9itjKO5xuD1cyeaOF8U9DdGvI=
+			BRk4XzsGE0roO+3QROa+hB0YcFY99M3RYK4h6HZpy4Y=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RMVCEventHandlerCenter.h</key>
@@ -681,22 +959,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hL7GMjXL5khnbXu7F9sBZWyo/kM=
+			bbdGmqkfyTdP2qT4F1F570mJad0=
 			</data>
 			<key>hash2</key>
 			<data>
-			fowm01ZeHi8Pcnh9jp0qAb0BqEASJeRyX9wUQkHTJ3I=
+			xxWJ0/cJR55BNrE8TL2cz8ctzeRdkVjIX/4ZhwRtwqE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RMVCWeakRefWrapper.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7Qcwud7wCaNTytsZhEeJCi3Njbw=
+			YRjtCXw7O5hwcKiaoVL3DdekkbY=
 			</data>
 			<key>hash2</key>
 			<data>
-			0qFb8/Vczus60Bayc3Q579e5RyzceUKhqjSj4x5WlcM=
+			inUnaCyYsArMD6l7GJkZjjSoDJC0PMaLb/Jim/Se3wk=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RMVersion.h</key>
@@ -741,6 +1019,28 @@
 			<key>hash2</key>
 			<data>
 			23gzsZ9gVVxUELLmttYmiNvmXAoW9qMX1T1cWmzUuG4=
+			</data>
+		</dict>
+		<key>PrivateHeaders/bugly_dispatch_recording_map.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UOX/gj2fmjujCCU+dIYxOLUeRxk=
+			</data>
+			<key>hash2</key>
+			<data>
+			J+yjlzQ9UkDDvPg8cYsoIrd2+foS31Qm5RhLQ6RZ84c=
+			</data>
+		</dict>
+		<key>PrivateHeaders/bugly_macho_image_helper.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p+wGOrfBFrVlQVduFnI3jncPQpM=
+			</data>
+			<key>hash2</key>
+			<data>
+			QIHwHHVgePGlK/BwHnGiTO0KlQGWusOJFXMiCbmc/Ko=
 			</data>
 		</dict>
 		<key>PrivateHeaders/rm_fishhook.h</key>

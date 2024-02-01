@@ -9,17 +9,20 @@
 #ifndef BuglyDefine_h
 #define BuglyDefine_h
 
-#define RM_MODULE_MEMORY    @"RMMemoryMonitorPlugin"
-#define RM_MODULE_LOOPER    @"BuglyLooperMonitorPlugin"
-#define RM_MODULE_LAUNCH    @"BuglyLaunchMonitorPlugin"
-#define RM_MODULE_YELLOW    @"RMYellowMonitorPlugin"
-#define RM_MODULE_METRICKIT @"BuglyMetricKitMonitorPlugin"
-#define RM_MODULE_RESOURCE  @"RMResourceMonitorPlugin"
-#define BUGLY_MODULE_CRASH  @"BuglyCrashMonitorPlugin"
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
 
-#define RM_MODULE_ALL \
-    @[BUGLY_MODULE_CRASH, RM_MODULE_MEMORY, RM_MODULE_LOOPER, RM_MODULE_LAUNCH, \
-      RM_MODULE_YELLOW, RM_MODULE_METRICKIT, RM_MODULE_RESOURCE]
+FOUNDATION_EXTERN NSString *const RM_MODULE_MEMORY;
+FOUNDATION_EXTERN NSString *const RM_MODULE_LOOPER;
+FOUNDATION_EXTERN NSString *const RM_MODULE_LAUNCH;
+FOUNDATION_EXTERN NSString *const RM_MODULE_YELLOW;
+FOUNDATION_EXTERN NSString *const RM_MODULE_METRICKIT;
+FOUNDATION_EXTERN NSString *const RM_MODULE_RESOURCE;
+FOUNDATION_EXPORT NSString *const BUGLY_MODUEL_NETWORK;
+FOUNDATION_EXTERN NSString *const BUGLY_MODULE_CRASH;
+FOUNDATION_EXTERN NSArray  *const RM_MODULE_ALL;
+
+#endif
 
 #ifdef __cplusplus
 extern "C" {

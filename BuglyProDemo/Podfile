@@ -5,7 +5,7 @@ target 'BuglyProDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'BuglyPro'
-#  pod 'BuglyPro', :podspec=>'https://raw.githubusercontent.com/BuglyDevTeam/BuglyPro-iOS/main/BuglyPro.podspec'
+  #pod 'BuglyPro', :podspec=>'https://raw.githubusercontent.com/BuglyDevTeam/BuglyPro-iOS/main/BuglyPro.podspec'
   # Pods for BuglyProDemo
 
   target 'BuglyProDemoTests' do

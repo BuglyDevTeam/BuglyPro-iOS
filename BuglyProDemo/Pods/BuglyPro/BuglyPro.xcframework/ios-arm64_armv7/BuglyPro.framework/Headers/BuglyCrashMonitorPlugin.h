@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSUInteger, BuglyUnhandledCrash) {
+    BuglyUnhandledCrash_Default = 0,
+    BuglyUnhandledCrash_Kotlin = 1,
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BuglyCrashMonitorPlugin : NSObject
@@ -58,6 +63,22 @@ NS_ASSUME_NONNULL_BEGIN
                           callStack:(NSArray *)aStackArray
                           extraInfo:(NSDictionary <NSString *, NSString *> *)info
                        terminateApp:(BOOL)terminate;
+
+/**
+ *
+ * @brief 上报自定义 crash 的堆栈
+ * 1. 该上报接口会 dump 全部线程信息，解析 stackArr 中堆栈作为 crash 线程的堆栈上报到后台
+ * 2. 调用该接口后，会关闭 crash 的监控，但不会主动杀进程，因此业务应该主动杀进程以规避异常。
+ * 3. 和“reportException”、“reportError”、“reportExceptionWithCategory”方法不同，该方法会生成一条crash 上报，并算在用户的 crash 率
+ * 因此该方法适合一些信息不全的crash上报，例如 “Kotlin Exception”
+ * 4. 为了能够识别堆栈地址并上报，stackArr 应该为 "[index] [image name] [address] [others]" 的结构，中间用空格或者tab键隔开
+ * 例如 "0   RMonitorExample                     0x102b38347        ThrowArrayIndexOutOfBoundsException + 159",
+ * 5. 该接口仅在 bugly sdk 初始化结束后生效
+ */
++ (void)reportUnhandledCrash:(BuglyUnhandledCrash)type
+                        name:(NSString *)name
+                      reason:(NSString *)reason
+                   callStack:(NSArray<NSString *> *)stackArr;
 
 /**
  * 设置自定义附件的绝对路径的集合。

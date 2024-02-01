@@ -15,6 +15,7 @@
 #import "BuglyConfig.h"
 #import "BuglyCustomData.h"
 #import "BuglyDelegate.h"
+#import "BuglyAppLifeCycleProvider.h"
 #import "BuglyCrashMonitorPlugin.h"
 #import "BuglyLaunchMonitorPlugin.h"
 #import "BuglyMetricKitMonitorPlugin.h"

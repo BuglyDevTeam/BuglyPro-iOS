@@ -1,6 +1,6 @@
 //
 //   BuglyConfig.h
-//   RaftMonitor
+//   Bugly
 //
 //   Created by engleliu on 2023/4/27
 //   Copyright © 2023 Tencent. All rights reserved.
@@ -11,6 +11,8 @@
 #import "BuglyDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+@class BuglyAppLifeCycleProvider;
 
 @interface BuglyConfig : NSObject
 
@@ -30,6 +32,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Bugly Delegate
 @property (nonatomic, assign) id<BuglyDelegate> delegate;
+
+/// 可以提供自定义的生命周期 provider
+@property (nonatomic, strong) BuglyAppLifeCycleProvider *appLifeCycleProvider;
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;

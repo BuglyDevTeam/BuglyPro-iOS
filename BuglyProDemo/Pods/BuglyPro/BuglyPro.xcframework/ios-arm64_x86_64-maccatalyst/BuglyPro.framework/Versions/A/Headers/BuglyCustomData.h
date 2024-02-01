@@ -139,6 +139,12 @@ FOUNDATION_EXPORT int const BUGLY_CUSTOM_DATA_MAX_STRING_ARRAY_LENGTH;
 - (BOOL)removeStringFromStringArrayParam:(NSString *)param forKey:(BuglyCustomArrayDataKey)key;
 
 /**
+ * 将 key 从自定义数据中移除
+ * @param key 如果KEY不在StringArrayParamKey定义中，则移除失败
+ */
+- (void)removeStringArray:(BuglyCustomArrayDataKey)key;
+
+/**
  * 添加顺序是：A1 -> A2 -> A2 -> A3 -> A4, 这个接口产生的结果类似：[A1, A2, A2, A3, A4]
  * 为字符串数组类型的自定义数据，增加VALUE
  * @param key 如果KEY不在StringArrayParamKey定义中，则添加失败

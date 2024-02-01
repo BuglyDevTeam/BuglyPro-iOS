@@ -1,16 +1,16 @@
 PODS:
-  - BuglyPro (2.7.51.2)
+  - BuglyPro (2.7.53.2)
 
 DEPENDENCIES:
-  - BuglyPro
+  - BuglyPro (from `https://raw.githubusercontent.com/BuglyDevTeam/BuglyPro-iOS/main/BuglyPro.podspec`)
 
-SPEC REPOS:
-  trunk:
-    - BuglyPro
+EXTERNAL SOURCES:
+  BuglyPro:
+    :podspec: https://raw.githubusercontent.com/BuglyDevTeam/BuglyPro-iOS/main/BuglyPro.podspec
 
 SPEC CHECKSUMS:
-  BuglyPro: f2a16bbd6ba9ff62cf51d3ee2deb72b0e82bb0e5
+  BuglyPro: 3eada55d1f0d10a20703ec26f102a66ec2f49956
 
-PODFILE CHECKSUM: 6c96821bc21e2acbf8f34ef95bb8e4d9ddf0b21c
+PODFILE CHECKSUM: d6d1dfa466255f8b617dca2e9938c57d3c8a685e
 
 COCOAPODS: 1.12.1

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+#import "BuglyDefine.h"
 #import "BuglyConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -85,6 +86,24 @@ NS_ASSUME_NONNULL_BEGIN
  * @return 对应已设置的自定义字段
 */
 + (nullable BuglyCustomData *)currentCustomDataForEvent:(BuglyEventTypeName)eventType;
+
+/**
+ * 更新 shiply sdk 相关标签，需要在 bugly sdk 完成初始化（Bugly setup completeHandler 回调）后调用，否则可能导致数据丢失
+ * @params tagArr 字符串数组，字符串限长 1024 字节，数组限长 30
+ */
++ (void)updateShiplyTags:(NSArray<NSString *> *)tagArr;
+
+/**
+ * 更新个例标签，需要在 bugly sdk 完成初始化（Bugly setup completeHandler 回调）后调用，否则可能导致数据丢失
+ * @params tagArr 字符串数组，字符串限长 1024 字节，数组限长 30
+ */
++ (void)updateCaseTags:(NSArray<NSString *> *)tagArr;
+
+/**
+ * 更新实验标签，需要在 bugly sdk 完成初始化（Bugly setup completeHandler 回调）后调用，否则可能导致数据丢失
+ * @params tagArr 字符串数组，字符串限长 1024 字节，数组限长 30
+ */
++ (void)updateTestTags:(NSArray<NSString *> *)tagArr;
 
 @end
 
