@@ -1,5 +1,12 @@
 # SDK更新日志
 
+## Version 2.7.53.5
+
+Release on 2024.04.09
+
+### Fix:
+* ；
+
 ## Version 2.7.53.3
 
 Release on 2024.02.04
