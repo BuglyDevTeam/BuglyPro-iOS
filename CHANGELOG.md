@@ -1,5 +1,12 @@
 # SDK更新日志
 
+## Version 2.7.53.9
+
+Release on 2024.05.08
+
+### Fix:
+* 重定义 rapidjson 中命名空间名称，解决因符号冲突导致的地址异常问题；
+
 ## Version 2.7.53.5
 
 Release on 2024.04.09
