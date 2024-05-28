@@ -1,5 +1,12 @@
 # SDK更新日志
 
+## Version 2.7.53.10
+
+Release on 2024.05.28
+
+### Fix:
+* 解决 SDK 与业务符号冲突问题；
+
 ## Version 2.7.53.9
 
 Release on 2024.05.08
