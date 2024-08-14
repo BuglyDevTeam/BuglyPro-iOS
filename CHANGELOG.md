@@ -1,5 +1,12 @@
 # SDK更新日志
 
+## Version 2.7.55.1
+
+Release on 2024.08.14
+
+### Fix:
+* 限制网络监控仅支持 iOS 13.0 及以上系统
+
 ## Version 2.7.55
 
 Release on 2024.08.09
