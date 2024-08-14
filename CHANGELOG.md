@@ -1,5 +1,26 @@
 # SDK更新日志
 
+## Version 2.7.55
+
+Release on 2024.08.09
+
+### Update
+* SDK 支持 minidump 信息采集；
+* 增加 C++ 异常的抛异常调用栈；
+* 支持 mach 异常捕获；
+* 上报增加 hotpatch 字段；
+* 优化 ANR 无堆栈问题；
+* coredump 增加上传能力；
+* 优化异步堆栈回溯实现；
+* 优化 foom 退出判定条件；
+* footprint 采集频率增加配置控制&增加 wakeup 的数据收集；
+* 优化内存图触发时采集系统内存信息的方式；
+* AppEventTracker 中增加 VC 内存信息数据；
+* 优化 vmmapgraph dump 效率；
+* MetricKit 支持按照配置类型进行上报；
+* 支持 Crash 监控模块单独预初始化；
+* 支持业务主动关闭 Bugly 网络上报；
+
 ## Version 2.7.53.12
 
 Release on 2024.07.29
