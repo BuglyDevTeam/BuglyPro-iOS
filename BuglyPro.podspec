@@ -7,11 +7,11 @@ Pod::Spec.new do |s|
   s.homepage     = "http://bugly.tds.qq.com/"
   s.license      = { :type => "Commercial", :text => "Copyright (C) 2024 Tencent Bugly, Inc. All rights reserved."}
   s.author       = { "Tencent" => "bugly@tencent.com" }
-  s.source       = { :http => "https://buglyprococoapodssdk-75649.gzc.vod.tencent-cloud.com/BuglyPro-2.8.0-beta.zip" }
+  s.source       = { :git => "https://github.com/BuglyDevTeam/BuglyPro-iOS.git", :tag => "#{s.version}" }
   s.requires_arc = true  
   s.platform     = :ios
   s.ios.deployment_target = '9.0'
-  s.vendored_frameworks ='BuglyPro.xcframework'
+  s.vendored_frameworks ='source/BuglyPro.xcframework'
   s.frameworks = 'SystemConfiguration','Security','Network'
   s.library = 'z','c++'
   s.license      = {
