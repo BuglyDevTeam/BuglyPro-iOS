@@ -835,6 +835,7 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
+					"-ld_classic",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.bugly.db;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -871,6 +872,7 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
+					"-ld_classic",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.bugly.db;
 				PRODUCT_NAME = "$(TARGET_NAME)";
