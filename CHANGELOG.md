@@ -1,5 +1,12 @@
 # SDK更新日志
 
+## Version 2.8.0-beta.5
+
+Release on 2024.09.13
+
+### Fix
+* 修复网络质量监控的一些问题；
+
 ## Version 2.8.0-beta.3
 
 Release on 2024.08.28
