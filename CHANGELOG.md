@@ -1,5 +1,12 @@
 # SDK更新日志
 
+## Version 2.7.55.6
+
+Release on 2024.10.25
+
+### Update:
+* 支持设置上报域名；
+
 ## Version 2.7.55.5
 
 Release on 2024.10.21
