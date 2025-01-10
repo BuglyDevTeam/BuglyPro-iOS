@@ -10,6 +10,7 @@
 #import <BuglyPro/BuglyConfig.h>
 #import <BuglyPro/BuglyDefine.h>
 #import <BuglyPro/BuglyLaunchMonitorPlugin.h>
+#import <BuglyPro/BuglyCrashMonitorPlugin.h>
 #include <sys/types.h>
 #include <sys/sysctl.h>
 
@@ -44,8 +45,34 @@ static void logger_func(RMLoggerLevel level, const char *log) {
     [BuglyLaunchMonitorPlugin addTag:@"tagTest2"];
     
     BuglyConfig* config = [[BuglyConfig alloc] initWithAppId:@"a2031e998b" appKey:@"5f58a9cf-0acc-4c0d-a020-fc8f0bacb3cc"];
+ 
     [Bugly start:RM_MODULE_ALL config:config];
+    
     return YES;
+}
+
++ (void)setupCustomFiles{
+    NSString *directoryPath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"BuglyCustomFileDirectory"];
+    [[NSFileManager defaultManager] removeItemAtPath:directoryPath error:nil];
+    NSError *error;
+    [[NSFileManager defaultManager] createDirectoryAtPath:directoryPath withIntermediateDirectories:YES attributes:nil error:&error];
+    
+    if (error) {
+        NSLog(@"创建目录时出错: %@", error.localizedDescription);
+        return;
+    }
+    
+    NSString *filePath = [directoryPath stringByAppendingPathComponent:@"testFile.file"];
+    NSError *writeError;
+    NSString *content = @"Hello World!";
+    [content writeToFile:filePath atomically:YES encoding:NSUTF8StringEncoding error:&writeError];
+    if (writeError) {
+        NSLog(@"创建文件时出错: %@", writeError.localizedDescription);
+    } else {
+        NSLog(@"文件创建成功，路径为: %@", filePath);
+    }
+
+    [BuglyCrashMonitorPlugin setAdditionalAttachmentPaths:@[filePath]];
 }
 
 
