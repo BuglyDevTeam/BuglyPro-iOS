@@ -1,5 +1,14 @@
 # SDK更新日志
 
+## Version 2.8.0.6
+
+Release on 2025.03.18
+
+### Fix
+* ANR 个例上报增加抓栈间隔字段；
+* Crash 捕获中 SIGPIPE 信号的处理问题；
+* 修复 BuglySwizzlerCache 中存在的多线程访问问题；
+
 ## Version 2.8.0
 
 Release on 2025.01.13
