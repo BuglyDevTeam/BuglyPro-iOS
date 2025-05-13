@@ -20,7 +20,8 @@ Pod::Spec.new do |s|
     sp.public_header_files = 'static/BuglyProCore.xcframework/ios-arm64/BuglyProCore.framework/Headers/*.{h}'
     sp.vendored_frameworks = 'static/BuglyProCore.xcframework'
     sp.user_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/BuglyPro/static/BuglyProCore.xcframework/ios-arm64/BuglyProCore.framework/Headers' }
-
+  end
+  
   s.subspec "VCSwizzle" do |sp|
     sp.source_files = 'static/BuglyProVCSwizzle.xcframework/ios-arm64/BuglyProVCSwizzle.framework/Headers/*.{h}'
     sp.public_header_files = 'static/BuglyProVCSwizzle.xcframework/ios-arm64/BuglyProVCSwizzle.framework/Headers/*.{h}'
