@@ -1,5 +1,13 @@
 # SDK更新日志
 
+## Version 2.8.0.10
+
+Release on 2025.05.13
+
+### Update
+* 发布产物支持分模块接入；
+
+
 ## Version 2.8.0.6
 
 Release on 2025.03.18
