@@ -8,7 +8,6 @@ Pod::Spec.new do |s|
   s.license      = { :type => "Commercial", :text => "Copyright (C) 2025 Tencent Bugly, Inc. All rights reserved."}
   s.author       = { "Tencent" => "bugly@tencent.com" }
   s.source       = { :http => "https://buglyprococoapodssdk-75649.gzc.vod.tencent-cloud.com/BuglyPro-2.8.0.10.zip" }
-  s.requires_arc = true  
   s.platform     = :ios
   s.ios.deployment_target = '10.0'
   s.static_framework = true
@@ -114,9 +113,9 @@ Pod::Spec.new do |s|
   end
 
   s.subspec "BuglyGWPASan" do |sp|
-    sp.source_files = 'static/BuglyGWPASan.xcframework/ios-arm64/BuglyGWPASan.framework/Headers/*.{h}'
-    sp.public_header_files = 'static/BuglyGWPASan.xcframework/ios-arm64/BuglyGWPASan.framework/Headers/*.{h}'
-    sp.vendored_frameworks = 'static/BuglyGWPASan.xcframework'
+    sp.source_files = 'static/BuglyProGWPASan.xcframework/ios-arm64/BuglyProGWPASan.framework/Headers/*.{h}'
+    sp.public_header_files = 'static/BuglyProGWPASan.xcframework/ios-arm64/BuglyProGWPASan.framework/Headers/*.{h}'
+    sp.vendored_frameworks = 'static/BuglyProGWPASan.xcframework'
     sp.dependency "#{s.name}/Core"
   end
 
