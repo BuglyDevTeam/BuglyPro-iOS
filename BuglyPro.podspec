@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
     sp.vendored_frameworks = 'static/BuglyProCore.xcframework'
     sp.user_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/BuglyPro/static/BuglyProCore.xcframework/ios-arm64/BuglyProCore.framework/Headers' }
   end
-  
+
   s.subspec "VCSwizzle" do |sp|
     sp.source_files = 'static/BuglyProVCSwizzle.xcframework/ios-arm64/BuglyProVCSwizzle.framework/Headers/*.{h}'
     sp.public_header_files = 'static/BuglyProVCSwizzle.xcframework/ios-arm64/BuglyProVCSwizzle.framework/Headers/*.{h}'
@@ -111,7 +111,7 @@ Pod::Spec.new do |s|
     sp.dependency "#{s.name}/Core"
     sp.weak_frameworks = 'MetricKit'
     sp.user_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/BuglyPro/static/BuglyProMetricKitMonitor.xcframework/ios-arm64/BuglyProMetricKitMonitor.framework/Headers' }
-    end
+  end
 
   s.subspec "BuglyGWPASan" do |sp|
     sp.source_files = 'static/BuglyGWPASan.xcframework/ios-arm64/BuglyGWPASan.framework/Headers/*.{h}'
