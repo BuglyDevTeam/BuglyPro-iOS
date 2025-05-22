@@ -1,5 +1,12 @@
 # SDK更新日志
 
+## Version 2.8.0.11
+
+Release on 2025.05.22
+
+### Fix
+* 卡顿监控问题修复；
+
 ## Version 2.8.0.10
 
 Release on 2025.05.13
