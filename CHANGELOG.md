@@ -1,5 +1,35 @@
 # SDK更新日志
 
+## 2.8.1
+
+Release On 2025.05.28
+
+### Update
+* 支持分模块构建和发布产物
+* 增加 Bugly SDK 初始化异常恢复机制（SDK 初始化失败清理缓存和配置）
+* 启动监控支持 prewarm 类型启动类型的区分
+* 构建产物关闭 bitcode 等编译选项
+* 个例上报增加启动时间上报
+* 增加 buglyid 生成上报，提高联网设备数的计算准确性
+* 增加 malloc_logger 对已有接口的调用
+* 优化 DAU 上报包体大小
+* 适配 keyboard extension FOOM 在新机型中的判断逻辑
+* GWP-ASan 优化，可监控更多内存分配对象
+* 优化 FOOM 判断，改善在内存快速增长场景下的 FOOM 判断
+* Crash mach 层监控改为默认开启
+* 增加 BuglyLogger 模块，允许业务打印部分日志到 Bugly Crash 中
+
+### Fix
+* 修复卡顿监控中出现的数据存储越界问题（历史问题）
+* 修复 mach exception 捕获 fault addr 获取错误的问题
+* 大内存分配监控缓存数据上报堆栈地址错误问题
+* 修复网络监控中 host 字段获取失败的问题
+* ANR 个例上报增加抓栈间隔字段
+* BuglySwizzleCache 中多线程访问的线程安全问题
+* Crash/异常退出监控对 SIGPIPE 信号的处理问题
+* 启动监控中存在自定义 span 和 tag 丢失的问题
+* 调整 Bugly 内部数据持久化逻辑，减少 ANR 堆栈序列化失败的问题
+
 ## Version 2.8.0.12
 
 Release on 2025.05.27
