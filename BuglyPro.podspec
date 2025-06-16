@@ -120,11 +120,11 @@ Pod::Spec.new do |s|
   end
 
   s.subspec "Logger" do |sp|
-    sp.source_files = 'static/BuglyLogger.xcframework/ios-arm64/BuglyLogger.framework/Headers/*.{h}'
-    sp.public_header_files = 'static/BuglyLogger.xcframework/ios-arm64/BuglyLogger.framework/Headers/*.{h}'
-    sp.vendored_frameworks = 'static/BuglyLogger.xcframework'
+    sp.source_files = 'static/BuglyProLogger.xcframework/ios-arm64/BuglyProLogger.framework/Headers/*.{h}'
+    sp.public_header_files = 'static/BuglyProLogger.xcframework/ios-arm64/BuglyProLogger.framework/Headers/*.{h}'
+    sp.vendored_frameworks = 'static/BuglyProLogger.xcframework'
     sp.dependency "#{s.name}/Core"
-    sp.user_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/Bugly/static/BuglyLogger.xcframework/ios-arm64/BuglyLogger.framework/Headers' }
+    sp.user_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/Bugly/static/BuglyProLogger.xcframework/ios-arm64/BuglyProLogger.framework/Headers' }
   end
 
   s.subspec "BuglyPro" do |sp|
