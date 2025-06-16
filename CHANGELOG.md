@@ -1,5 +1,13 @@
 # SDK更新日志
 
+## 2.8.1.2
+
+Release On 2025.06.16
+
+### Fix
+* 修复 BuglyLogger 模块引入问题
+* 修复 GWP-ASan 在 iOS 26 中的兼容问题
+
 ## 2.8.1.1
 
 Release On 2025.06.06

@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.authors      = "Tencent"
   s.name         = "BuglyPro"
-  s.version      = "2.8.1.1"
+  s.version      = "2.8.1.2"
   s.summary      = "BuglyPro iOS SDK"
   s.description  = "iOS library for Bugly Service. Sign up for a service at https://bugly.tds.qq.com."
   s.homepage     = "http://bugly.tds.qq.com/"
   s.license      = { :type => "Commercial", :text => "Copyright (C) 2025 Tencent Bugly, Inc. All rights reserved."}
   s.author       = { "Tencent" => "bugly@tencent.com" }
-  s.source       = { :http => "https://buglyprococoapodssdk-75649.gzc.vod.tencent-cloud.com/BuglyPro-2.8.1.1.zip" }
+  s.source       = { :http => "https://buglyprococoapodssdk-75649.gzc.vod.tencent-cloud.com/BuglyPro-2.8.1.2.zip" }
   s.platform     = :ios
   s.ios.deployment_target = '10.0'
   s.static_framework = true
@@ -117,6 +117,14 @@ Pod::Spec.new do |s|
     sp.public_header_files = 'static/BuglyProGWPASan.xcframework/ios-arm64/BuglyProGWPASan.framework/Headers/*.{h}'
     sp.vendored_frameworks = 'static/BuglyProGWPASan.xcframework'
     sp.dependency "#{s.name}/Core"
+  end
+
+  s.subspec "Logger" do |sp|
+    sp.source_files = 'static/BuglyLogger.xcframework/ios-arm64/BuglyLogger.framework/Headers/*.{h}'
+    sp.public_header_files = 'static/BuglyLogger.xcframework/ios-arm64/BuglyLogger.framework/Headers/*.{h}'
+    sp.vendored_frameworks = 'static/BuglyLogger.xcframework'
+    sp.dependency "#{s.name}/Core"
+    sp.user_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/Bugly/static/BuglyLogger.xcframework/ios-arm64/BuglyLogger.framework/Headers' }
   end
 
   s.subspec "BuglyPro" do |sp|
