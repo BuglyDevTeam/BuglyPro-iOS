@@ -1,5 +1,18 @@
 # SDK更新日志
 
+## 2.8.1.5
+
+Release On 2025.07.02
+
+### Fix
+
+* BuglyLogger 日志接口兼容 swift 桥接；
+* FOOM 堆栈上报兼容 MachO 文件名中的空格；
+
+### Update
+
+* 增加腾讯云域名选项
+
 ## 2.8.1.3
 
 Release On 2025.06.16
