@@ -1,5 +1,20 @@
 # SDK更新日志
 
+
+## 2.8.1.6
+
+Release On 2025.07.16
+
+### Fix
+
+* 取消 Crash 处理逻辑超时跑出异常的逻辑；
+* mach 层异常捕获增加 EXC_GUARD 类型；
+
+### Update
+
+* 增加获取 Bugly 内部 device id 接口；
+
+
 ## 2.8.1.5
 
 Release On 2025.07.02
