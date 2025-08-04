@@ -1,5 +1,12 @@
 # SDK更新日志
 
+## 2.8.1.7
+
+Release On 2025.08.04
+
+### Fix
+
+* 修复 BuglyLogger 中 NSDateFormatter 使用问题；
 
 ## 2.8.1.6
 
