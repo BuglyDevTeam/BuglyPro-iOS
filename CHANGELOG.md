@@ -1,5 +1,16 @@
 # SDK更新日志
 
+## 2.8.1.13
+
+Release On 2025.09.17
+
+### Fix
+
+* 修复 buglyDeviceID 内存问题；
+* 解决堆栈数据异常导致数据上报 Crash 问题；
+* VC 泄漏监控在 present VC 手势退出时误判问题；
+* 解决 Crash 抓取堆栈为空的问题；
+
 ## 2.8.1.9
 
 Release On 2025.08.13
