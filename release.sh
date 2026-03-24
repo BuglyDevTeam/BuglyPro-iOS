@@ -17,7 +17,7 @@ echo "==> Updating podspec version..."
 sed -i '' "s/s.version.*=.*/s.version      = \"${VERSION}\"/" "$PODSPEC"
 
 echo "==> Committing changes..."
-git add .
+git add PODSPEC
 if git diff --cached --quiet; then
     echo "==> No changes to commit, skipping..."
 else

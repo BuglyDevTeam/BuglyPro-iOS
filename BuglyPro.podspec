@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.authors      = "Tencent"
   s.name         = "BuglyPro"
-  s.version      = "0.0.3-beta"
+  s.version      = "0.0.0"
   s.summary      = "BuglyPro iOS SDK"
   s.description  = "iOS library for Bugly Service. Sign up for a service at https://bugly.tds.qq.com."
   s.homepage     = "http://bugly.tds.qq.com/"
