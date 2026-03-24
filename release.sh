@@ -17,8 +17,12 @@ echo "==> Updating podspec version..."
 sed -i '' "s/s.version.*=.*/s.version      = \"${VERSION}\"/" "$PODSPEC"
 
 echo "==> Committing changes..."
-git add "$PODSPEC"
-git commit -m "Release ${VERSION}"
+git add .
+if git diff --cached --quiet; then
+    echo "==> No changes to commit, skipping..."
+else
+    git commit -m "Release ${VERSION}"
+fi
 
 echo "==> Tagging ${VERSION}..."
 git tag "${VERSION}"
