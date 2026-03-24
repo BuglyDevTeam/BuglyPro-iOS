@@ -17,7 +17,7 @@ echo "==> Updating podspec version..."
 sed -i '' "s/s.version.*=.*/s.version      = \"${VERSION}\"/" "$PODSPEC"
 
 echo "==> Committing changes..."
-git add PODSPEC
+git add "${PODSPEC}"
 if git diff --cached --quiet; then
     echo "==> No changes to commit, skipping..."
 else
@@ -25,6 +25,11 @@ else
 fi
 
 echo "==> Tagging ${VERSION}..."
+if git rev-parse "${VERSION}" >/dev/null 2>&1; then
+    echo "==> Tag ${VERSION} already exists, deleting..."
+    git tag -d "${VERSION}"
+    git push origin ":refs/tags/${VERSION}" || true
+fi
 git tag "${VERSION}"
 
 echo "==> Pushing commit and tag..."
@@ -38,4 +43,5 @@ gh release create "${VERSION}" \
     --title "${VERSION}" \
     --notes "BuglyPro iOS SDK ${VERSION}"
 
+echo ""
 echo "==> Done! BuglyPro ${VERSION} released successfully."
