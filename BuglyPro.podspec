@@ -134,10 +134,10 @@ Pod::Spec.new do |s|
     sp.weak_frameworks = 'Network', 'MetricKit'
   end
 
-  s.subspec "BuglyProOAExtension" do |sp|
-    sp.source_files = 'static/BuglyProOAExtension.xcframework/ios-arm64/BuglyProOAExtension.framework/Headers/*.{h}'
-    sp.public_header_files = 'static/BuglyProOAExtension.xcframework/ios-arm64/BuglyProOAExtension.framework/Headers/*.{h}'
-    sp.vendored_frameworks = 'static/BuglyProOAExtension.xcframework'
+  s.subspec "BuglyProExtension" do |sp|
+    sp.source_files = 'static/BuglyProExtension.xcframework/ios-arm64/BuglyProExtension.framework/Headers/*.{h}'
+    sp.public_header_files = 'static/BuglyProExtension.xcframework/ios-arm64/BuglyProExtension.framework/Headers/*.{h}'
+    sp.vendored_frameworks = 'static/BuglyProExtension.xcframework'
     sp.weak_frameworks = 'Network', 'MetricKit'
   end
 
