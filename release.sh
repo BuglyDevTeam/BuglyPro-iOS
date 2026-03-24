@@ -5,6 +5,7 @@ VERSION="${1:?Usage: ./release.sh <VERSION>}"
 ZIP_FILE="release/BuglyPro-${VERSION}.zip"
 PODSPEC="BuglyPro.podspec"
 REPO="BuglyDevTeam/BuglyPro-iOS"
+export GH_TOKEN="${GITHUB_TOKEN}"
 
 if [ ! -f "$ZIP_FILE" ]; then
     echo "Error: $ZIP_FILE not found"
