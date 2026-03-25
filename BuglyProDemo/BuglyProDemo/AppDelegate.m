@@ -44,8 +44,10 @@ static void logger_func(RMLoggerLevel level, const char *log) {
     [BuglyLaunchMonitorPlugin addTag:@"tagTest1"];
     [BuglyLaunchMonitorPlugin addTag:@"tagTest2"];
     
-    BuglyConfig* config = [[BuglyConfig alloc] initWithAppId:@"a2031e998b" appKey:@"5f58a9cf-0acc-4c0d-a020-fc8f0bacb3cc"];
- 
+    BuglyConfig* config = [[BuglyConfig alloc] initWithAppId:@"b3ad978bda" appKey:@"2ecad837-3bb4-4d8d-b2d3-1e749ec219a2"];
+    config.serverHostType = BuglyServerHostTypeCloudOversea;
+    config.userIdentifier = @"国际站测试";
+    config.deviceIdentifier = @"国际站测试设备id";
     [Bugly start:RM_MODULE_ALL config:config];
     
     return YES;

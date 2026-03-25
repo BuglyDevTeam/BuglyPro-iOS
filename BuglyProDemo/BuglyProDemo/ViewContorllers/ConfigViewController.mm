@@ -8,7 +8,7 @@
 
 #import "ConfigViewController.h"
 
-//#import "BuglyAppInfo.h"
+//#import "BuglyProAppInfo.h"
 
 @interface ConfigViewController ()
 
