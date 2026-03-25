@@ -32,7 +32,8 @@
 - (IBAction)updateConfig:(id)sender {
 //    [BuglyAppInfo currentAppInfo].host = self.reportURLTextField.text;
 //    [BuglyAppInfo currentAppInfo].appId = self.reportAppKeyTextField.text;
-    
+    NSString *appId = self.reportAppKeyTextField.text;
+    [[NSUserDefaults standardUserDefaults] setObject:@[appId] forKey:@"bugly.demo.env"];
     [self.reportURLTextField resignFirstResponder];
     [self.reportAppKeyTextField resignFirstResponder];
 }

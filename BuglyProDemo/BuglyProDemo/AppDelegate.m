@@ -44,7 +44,17 @@ static void logger_func(RMLoggerLevel level, const char *log) {
     [BuglyLaunchMonitorPlugin addTag:@"tagTest1"];
     [BuglyLaunchMonitorPlugin addTag:@"tagTest2"];
     
-    BuglyConfig* config = [[BuglyConfig alloc] initWithAppId:@"b3ad978bda" appKey:@"2ecad837-3bb4-4d8d-b2d3-1e749ec219a2"];
+    NSString *appId = @"b3ad978bda";
+    NSString *appKey = @"2ecad837-3bb4-4d8d-b2d3-1e749ec219a2";
+    
+    NSArray *demoEnvInfo = [[NSUserDefaults standardUserDefaults] arrayForKey:@"bugly.demo.env"];
+    if (demoEnvInfo.count >= 1) {
+        appId = demoEnvInfo[0];
+     } else {
+         [[NSUserDefaults standardUserDefaults] setObject:@[appId] forKey:@"bugly.demo.env"];
+    }
+    
+    BuglyConfig* config = [[BuglyConfig alloc] initWithAppId:appId appKey:appKey];
     config.serverHostType = BuglyServerHostTypeCloudOversea;
     config.userIdentifier = @"国际站测试";
     config.deviceIdentifier = @"国际站测试设备id";
