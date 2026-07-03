@@ -281,6 +281,10 @@ int g_crasher_denominator = 0;
 }
 
 - (void)recursivelyUnfairLock {
+    /// ios 26上，os_unfair_lock崩溃属于SIGKILL崩溃，绕过用户态，导致所有的SDK都无法捕获
+    if(@available(iOS 26.0, *)) {
+        __builtin_trap();
+    }
     os_unfair_lock_lock(&hashmap_unfair_lock);
     os_unfair_lock_lock(&hashmap_unfair_lock);
     NSLog(@"Is locking...Thread : %@", [NSThread currentThread]);

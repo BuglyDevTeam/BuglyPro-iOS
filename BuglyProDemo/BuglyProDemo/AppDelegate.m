@@ -57,7 +57,7 @@ static void logger_func(RMLoggerLevel level, const char *log) {
     BuglyConfig* config = [[BuglyConfig alloc] initWithAppId:appId appKey:appKey];
     config.serverHostType = BuglyServerHostTypeCloudOversea;
     config.userIdentifier = @"国际站测试";
-    config.deviceIdentifier = @"国际站测试设备id";
+    config.clientTag = @"国际站测试设备id";
     [Bugly start:RM_MODULE_ALL config:config];
     
     return YES;
